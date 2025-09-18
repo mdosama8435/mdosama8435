@@ -2,13 +2,19 @@
 <p align="center">
   <svg width="100%" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
-        <stop offset="0%" stop-color="#00FFFF"/>
-        <stop offset="50%" stop-color="#FF00FF"/>
-        <stop offset="100%" stop-color="#00FFFF"/>
+      <!-- Animated Gradient -->
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00FFFF">
+          <animate attributeName="stop-color" values="#00FFFF;#FF00FF;#FFD700;#00FF00;#00FFFF" dur="6s" repeatCount="indefinite"/>
+        </stop>
+        <stop offset="100%" stop-color="#FF00FF">
+          <animate attributeName="stop-color" values="#FF00FF;#FFD700;#00FF00;#00FFFF;#FF00FF" dur="6s" repeatCount="indefinite"/>
+        </stop>
       </linearGradient>
+
+      <!-- Glow Filter -->
       <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur stdDeviation="10" result="blur"/>
+        <feGaussianBlur stdDeviation="8" result="blur"/>
         <feMerge>
           <feMergeNode in="blur"/>
           <feMergeNode in="blur"/>
@@ -16,6 +22,8 @@
         </feMerge>
       </filter>
     </defs>
+
+    <!-- 🔥 Animated Main Text -->
     <text x="50%" y="50%" text-anchor="middle" dy=".35em"
       font-family="Orbitron, sans-serif"
       font-size="90"
@@ -23,13 +31,22 @@
       fill="url(#grad)"
       filter="url(#glow)">
       Md Osama
-      <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+      <!-- Scale Animation -->
+      <animateTransform attributeName="transform" attributeType="XML"
+        type="scale" values="1;1.1;1" dur="3s" repeatCount="indefinite"/>
+      <!-- Glow Flicker -->
+      <animate attributeName="fill-opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
     </text>
+
+    <!-- ✨ Animated Subtitle -->
     <text x="50%" y="120" text-anchor="middle"
       font-family="Orbitron, sans-serif"
       font-size="30"
-      fill="#00FFFF">
+      fill="url(#grad)"
+      filter="url(#glow)">
       AI Enthusiast | CS Student | Innovator
+      <!-- Flicker Animation -->
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/>
     </text>
   </svg>
 </p>
