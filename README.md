@@ -1,41 +1,6 @@
-<!-- 🌟 Neon Hero Banner (Prominent Version) -->
+<!-- 🌟 Neon Hero Banner (GitHub-Compatible GIF) -->
 <p align="center">
-  <svg width="100%" height="150" viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
-        <stop offset="0%" stop-color="#00FFFF"/>
-        <stop offset="50%" stop-color="#FF00FF"/>
-        <stop offset="100%" stop-color="#00FFFF"/>
-      </linearGradient>
-    </defs>
-
-    <!-- Glow-like shadow by duplicating text slightly behind -->
-    <text x="50%" y="55%" text-anchor="middle" dy=".35em"
-      font-family="Orbitron, sans-serif"
-      font-size="80"
-      font-weight="900"
-      fill="#00FFFF"
-      opacity="0.3">
-      Md Osama
-    </text>
-
-    <!-- Main text -->
-    <text x="50%" y="50%" text-anchor="middle" dy=".35em"
-      font-family="Orbitron, sans-serif"
-      font-size="80"
-      font-weight="900"
-      fill="url(#grad)">
-      Md Osama
-    </text>
-
-    <!-- Subtitle -->
-    <text x="50%" y="120" text-anchor="middle"
-      font-family="Orbitron, sans-serif"
-      font-size="24"
-      fill="#00FFFF">
-      AI Enthusiast | CS Student | Innovator
-    </text>
-  </svg>
+  <img src="assets/neon-banner.gif" alt="Md Osama Neon Banner" width="100%" />
 </p>
 
 <!-- ✨ Typing Animation -->
