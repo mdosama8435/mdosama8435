@@ -1,14 +1,16 @@
-<!-- 🌟 Neon Animated Name -->
+<!-- 🌟 Neon Animated Hero Banner -->
 <p align="center">
-  <svg fill="none" viewBox="0 0 800 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+  <svg width="100%" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
         <stop offset="0%" stop-color="#00FFFF"/>
-        <stop offset="100%" stop-color="#FF00FF"/>
+        <stop offset="50%" stop-color="#FF00FF"/>
+        <stop offset="100%" stop-color="#00FFFF"/>
       </linearGradient>
       <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur stdDeviation="8" result="blur"/>
+        <feGaussianBlur stdDeviation="10" result="blur"/>
         <feMerge>
+          <feMergeNode in="blur"/>
           <feMergeNode in="blur"/>
           <feMergeNode in="SourceGraphic"/>
         </feMerge>
@@ -16,12 +18,18 @@
     </defs>
     <text x="50%" y="50%" text-anchor="middle" dy=".35em"
       font-family="Orbitron, sans-serif"
-      font-size="72"
-      font-weight="bold"
+      font-size="90"
+      font-weight="900"
       fill="url(#grad)"
       filter="url(#glow)">
       Md Osama
       <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+    </text>
+    <text x="50%" y="120" text-anchor="middle"
+      font-family="Orbitron, sans-serif"
+      font-size="30"
+      fill="#00FFFF">
+      AI Enthusiast | CS Student | Innovator
     </text>
   </svg>
 </p>
