@@ -25,7 +25,7 @@ I’m **Md Osama**, a passionate technologist exploring the edge where **Compute
 ## ⚡ 𝑺𝒌𝒊𝒍𝒍𝒔 & 𝑻𝒆𝒄𝒉 𝑺𝒕𝒂𝒄𝒌  
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,bootstrap,js,java,python,c,mysql,git,github,vscode,react,nodejs,tensorflow,pytorch" />
+  <img src="https://skillicons.dev/icons?i=html,css,bootstrap,js,java,python,c,mysql,git,github" />
 </p>
 
 ---
